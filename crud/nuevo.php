@@ -2,7 +2,7 @@
 	include('inc/cabecera.php');
 	include('inc/menu.php');
 
-	
+
 
 ?>
 

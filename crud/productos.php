@@ -2,7 +2,7 @@
 	include('inc/cabecera.php');
 	include('inc/menu.php');
 
-	
+
 
 ?>
 
@@ -11,7 +11,7 @@
 	<div class="row">
 		<div class="col-md-8">
 
-			<h1>Nueva Persona</h1>
+			<h1>Productos Persona</h1>
 
 		</div>
 		<div class="col-md-4">

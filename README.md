@@ -1,2 +1,2 @@
 # programacionweb
-mi trabajo en repositorio
+primer proyecto en el curso de programación web

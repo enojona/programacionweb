@@ -1,4 +1,2 @@
-
-<h1>inclusion de archivos</h1>
-<p> contenido principal </p>
-
+	<h1>Inclusion de Archivos</h1>
+	<p>Contenido principal</p>

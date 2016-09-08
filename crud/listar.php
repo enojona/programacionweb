@@ -27,7 +27,11 @@
 			   	   <td> <?php echo $fila['personas_id'];?> </td>
 			   	  <td> <?php echo $fila['paterno'].' '.$fila['materno'].' '.$fila['nombres'];?> </td>
 			   	  <td> <?php echo $fila ['fecha_creacion'];?></td>
-			   	  <td></td>
+			   	  <td> 
+			   	  <a href="modificar.php?id=<?php echo $fila['personas_id'];?>"> 
+			   	  <span class="glyphicon glyphicon-edit"></span>
+			   	  </a>
+			   	  </td>
 			   	  <?php
 			   }
 			   ?>

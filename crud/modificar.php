@@ -3,6 +3,11 @@
 	include('inc/menu.php');
 	include('inc/conexion.php');
 
+	$sql="SELECT * FROM personas WHERE personas_id={$_GET['id']}";
+	$resultado=$conexion->query($sql);
+	$fila=$resultado->fetch_assoc();
+	print_r($fila);
+	
 ?>
 
 <div class="container">
@@ -10,11 +15,12 @@
 	<div class="row">
 		<div class="col-md-8">
 			<h1>Registrar Nueva Persona</h1>
-			<form class="form-horizontal" method="post" action="nuevo-recibe.php">
+			<form class="form-horizontal" method="post" action="modificar-recibe.php">
+			<input type="text" class="form-control" name="txt-id" id="txt-id"  value="<? echo $fila['personas_id'];?>" >
 				<div class="form-group">
 					<label for="txt-paterno" class="col-md-2 control-label">Paterno:</label>
 					<div class="col-md-2">
-						<input type="text" class="form-control" name="txt-paterno" id="txt-paterno" placeholder="Apellido Paterno" >
+						<input type="text" hidden class="form-control" name="txt-paterno" id="txt-paterno" placeholder="Apellido Paterno" value="<? echo $fila['paterno'];?>" >
 					</div>
 				</div>
 				<div class="form-group">

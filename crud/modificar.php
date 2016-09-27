@@ -5,7 +5,7 @@
 
 	$sql="SELECT * FROM personas WHERE personas_id={$_GET['id']}";
 	$resultado=$conexion->query($sql);
-	$fila=$resultado->fetch_assoc();
+	$fila=$resultado->fetch_assoc($sql);
 	print_r($fila);
 	
 ?>

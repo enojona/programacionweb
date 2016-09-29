@@ -11,8 +11,4 @@
 	$respuesta['cantidad']=2;
 	$rspuesta['items']=$personas;
 	echo json_encode($respuesta);
-
 	?>
-
-
-	

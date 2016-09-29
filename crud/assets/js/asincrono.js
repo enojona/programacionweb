@@ -36,7 +36,10 @@ $(
 		);
 
 		$("#a-inicio").on("click", function(){
-			alert("Inicio");
+			//alert("Inicio");
+			
+			herramienta.saluda();
+			herramienta.getNombre();
 		});
 
 		$("#a-nuevo").on("click", function(){
